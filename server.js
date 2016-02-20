@@ -41,10 +41,14 @@ function download(track){
 			mkdirForce(`data/${track.band}/${track.album}`, (err)=>{
 				if(err) return reject(err);
 
-				console.log(`Downloading ${track.title}`)
-				exec(`wget --output-document data/${track.band}/${track.album}/${track.title}.mp3 '${track.url}'`, (error, stdout, stderr) => {
-					return error ? reject(error) : resolve();
-				});
+				fs.stat(`data/${track.band}/${track.album}/${track.title}.mp3`, (err, file)=>{
+					if(file) return console.log(`${track.title} already downloaded`);
+
+					console.log(`Downloading ${track.title}`)
+					exec(`wget --output-document data/${track.band}/${track.album}/${track.title}.mp3 '${track.url}'`, (error, stdout, stderr) => {
+						return error ? reject(error) : resolve();
+					});
+				});				
 			});
 		});		
 	});
