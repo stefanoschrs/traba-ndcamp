@@ -1,0 +1,27 @@
+{
+	"name": "traba-ndcamp",
+	"version": "0.0.1",
+	"description": "Bandcamp Downloader",
+	"main": "server.js",
+	"dependencies": {
+		"body-parser": "^1.15.0",
+		"express": "^4.13.4"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/stefanoschrs/traba-ndcamp.git"
+	},
+	"author": "Stefanos Chrs <stefanoschrs@hotmail.com> (http://www.stfnstudios.com/)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/stefanoschrs/traba-ndcamp/issues"
+	},
+	"homepage": "https://github.com/stefanoschrs/traba-ndcamp#readme",
+	"engines": {
+		"node": "~5.5"
+	}
+}
