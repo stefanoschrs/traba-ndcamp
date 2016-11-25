@@ -1,4 +1,6 @@
-# traba-ndcamp
+# ~~traba-ndcamp~~ 
+# **DEPRECATED** 
+# Moved to [https://github.com/stefanoschrs/trabandcamp](https://github.com/stefanoschrs/trabandcamp)
 Easy to use, minimal, **Bandcamp Downloader**
 
 1. Prerequisites
